@@ -22,9 +22,6 @@ import VueStash from 'vue-stash'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vuex}}
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
-{{#axios}}
-Vue.use(axios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/axios}}
 {{#vueAxios}}
 Vue.use(VueAxios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueAxios}}
