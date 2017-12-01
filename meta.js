@@ -51,6 +51,10 @@ module.exports = {
             "type": "confirm",
             "message": "Install moment?"
         },
+        "socket": {
+            "type": "confirm",
+            "message": "Install socket.io?"
+        },
         "lodash": {
             "type": "confirm",
             "message": "Install lodash?"
