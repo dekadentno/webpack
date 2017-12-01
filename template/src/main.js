@@ -17,7 +17,7 @@ import VueAxios from 'vue-axios'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vueResource}}
 {{#vueStash}}
-import VueStash from 'vue-stash';{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+import VueStash from 'vue-stash'{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vueStash}}
 
 {{#axios}}
