@@ -47,13 +47,9 @@ module.exports = {
             "message": "Install vue-router?"
         },
         // custom packages
-        "axios": {
+        "moment": {
             "type": "confirm",
-            "message": "Install axios?"
-        },
-        "vueAxios": {
-            "type": "confirm",
-            "message": "Install vue-axios?"
+            "message": "Install moment?"
         },
         "vueResource": {
             "type": "confirm",
