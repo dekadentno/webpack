@@ -45,6 +45,9 @@
     {{#moment}},
     "moment": "~2.19.3"
     {{/moment}}
+    {{#lodash}},
+    "lodash": "~1.0.4"
+    {{/lodash}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
