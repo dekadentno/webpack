@@ -30,7 +30,7 @@ Vue.use(VueAxios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueResource}}
 {{#vueStash}}
-Vue.use(VueStash){#if_eq lintConfig "airbnb"}};{{/if_eq}}
+Vue.use(VueStash){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueStash}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
