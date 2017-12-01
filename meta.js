@@ -51,6 +51,10 @@ module.exports = {
             "type": "confirm",
             "message": "Install moment?"
         },
+        "lodash": {
+            "type": "confirm",
+            "message": "Install lodash?"
+        },
         "vueResource": {
             "type": "confirm",
             "message": "Install vue-resource?"
