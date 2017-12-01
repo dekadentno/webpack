@@ -49,7 +49,7 @@
     "lodash": "~4.17.4"
     {{/lodash}}
     {{#socket}},
-    "socket": "~2.1.1-a"
+    "socket": "~2.1.1"
     {{/socket}}
   },
   "devDependencies": {
