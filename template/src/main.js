@@ -16,6 +16,9 @@ import VueStash from 'vue-stash'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vuex}}
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
+{{#moment}}
+import moment from 'moment'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/moment}}
   
 {{#vueResource}}
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
@@ -26,6 +29,9 @@ Vue.use(VueStash){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vuex}}
 Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
+  {{#moment}}
+Vue.use(moment){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/moment}}
   
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
