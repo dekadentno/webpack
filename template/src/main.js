@@ -7,6 +7,31 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
+{{#axios}}
+import axios from 'axios'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/axios}}
+ {{#vueAxios}}
+import VueAxios from 'vue-axios'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/vueAxios}}
+{{#vueResource}}
+import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#vueResource}}
+{{#vueStash}}
+import VueStash from 'vue-stash';{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#vueStash}}
+
+{{#axios}}
+Vue.use(axios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/axios}}
+{{#vueAxios}}
+Vue.use(VueAxios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/vueAxios}}
+{{#vueResource}}
+Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#vueResource}}
+{{#vueStash}}
+Vue.use(VueStash){#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{#vueStash}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
@@ -24,3 +49,12 @@ new Vue({
   components: { App }{{#if_eq lintConfig "airbnb"}},{{/if_eq}}
   {{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+
+window._log = window.console.log.bind && window.console.log.bind(window.console) || function(){
+};
+window._wrn = window.console.warn.bind && window.console.warn.bind(window.console) || function(){
+};
+window._err = window.console.error.bind && window.console.error.bind(window.console) || function(){
+};
+window._info = window.console.info.bind && window.console.info.bind(window.console) || function(){
+};
