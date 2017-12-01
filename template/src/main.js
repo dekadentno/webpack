@@ -19,10 +19,16 @@ import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#moment}}
 import moment from 'moment'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/moment}}
-  {{#lodash}}
+{{#lodash}}
 import lodash from 'lodash'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 window._ = lodash{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/lodash}}
+{{#socket}}
+/*
+import VueSocketio from 'vue-socket.io';
+Vue.use(VueSocketio, 'http://socketserver.com:1923');
+*/
+{{/socket}}
   
 {{#vueResource}}
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
