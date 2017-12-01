@@ -7,12 +7,6 @@ import App from './App'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/router}}
-{{#axios}}
-import axios from 'axios'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/axios}}
- {{#vueAxios}}
-import VueAxios from 'vue-axios'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/vueAxios}}
 {{#vueResource}}
 import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueResource}}
@@ -22,9 +16,7 @@ import VueStash from 'vue-stash'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vuex}}
 import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vuex}}
-{{#vueAxios}}
-Vue.use(VueAxios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
-{{/vueAxios}}
+  
 {{#vueResource}}
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueResource}}
