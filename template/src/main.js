@@ -19,7 +19,9 @@ import VueResource from 'vue-resource'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vueStash}}
 import VueStash from 'vue-stash'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueStash}}
-
+{{#vuex}}
+import Vuex from 'vuex'{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/vuex}}
 {{#axios}}
 Vue.use(axios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/axios}}
@@ -29,10 +31,13 @@ Vue.use(VueAxios){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{#vueResource}}
 Vue.use(VueResource){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueResource}}
-  {{#vueStash}}
+{{#vueStash}}
 Vue.use(VueStash){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 {{/vueStash}}
-
+{{#vuex}}
+Vue.use(Vuex){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
+{{/vuex}}
+  
 Vue.config.productionTip = false{{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
 /* eslint-disable no-new */
