@@ -53,7 +53,7 @@ module.exports = {
         },
         "socket": {
             "type": "confirm",
-            "message": "Install socket.io?"
+            "message": "Install vue-socket.io?"
         },
         "lodash": {
             "type": "confirm",
