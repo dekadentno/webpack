@@ -60,13 +60,4 @@ new Vue({
   {{/if_eq}}
 }){{#if_eq lintConfig "airbnb"}};{{/if_eq}}
 
-console.log("Init!");
-
-window._log = window.console.log.bind && window.console.log.bind(window.console) || function(){
-};
-window._wrn = window.console.warn.bind && window.console.warn.bind(window.console) || function(){
-};
-window._err = window.console.error.bind && window.console.error.bind(window.console) || function(){
-};
-window._info = window.console.info.bind && window.console.info.bind(window.console) || function(){
-};
+console.log('Init!');
