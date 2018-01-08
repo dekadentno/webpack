@@ -7,22 +7,22 @@ import App from './App'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/router}}
-{{#vueStash}}
+{{#if_eq stateManagementConfig "vueStash"}}
 import VueStash from 'vue-stash'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/vueStash}}
-{{#vuex}}
+{{/if_eq}}
+{{#if_eq stateManagementConfig "vuex"}}
 import Vuex from 'vuex'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/vuex}}
-{{#moment}}
+{{/if_eq}}
+{{#if_eq dateLibrary "moment"}}
 import moment from 'moment'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/moment}}
+{{/if_eq}}
 {{#lodash}}
 import lodash from 'lodash'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 window._ = lodash{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/lodash}}
-{{#datefns}}
+{{#if_eq dateLibrary "datefns"}}
 import * as DateFns from 'date-fns'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/datefns}}
+{{/if_eq}}
 {{#socket}}
 /*
 import VueSocketio from 'vue-socket.io';
@@ -33,18 +33,18 @@ Vue.use(VueSocketio, 'http://socketserver.com:1923');
 {{#vueResource}}
 Vue.use(VueResource){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/vueResource}}
-{{#vueStash}}
+{{#if_eq stateManagementConfig "vueStash"}}
 Vue.use(VueStash){{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/vueStash}}
-{{#vuex}}
+{{/if_eq}}
+{{#if_eq stateManagementConfig "vuex"}}
 Vue.use(Vuex){{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/vuex}}
-{{#moment}}
+{{/if_eq}}
+{{#if_eq dateLibrary "moment"}}
 Vue.use(moment){{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/moment}}
-{{#datefns}}
+{{/if_eq}}
+{{#if_eq dateLibrary "datefns"}}
 Vue.use(DateFns){{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/datefns}}
+{{/if_eq}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 

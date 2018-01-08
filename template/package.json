@@ -33,18 +33,18 @@
     {{#vueAxios}},
     "vue-axios": "~2.0.2"
     {{/vueAxios}}
-    {{#vuex}},
+    {{#if_eq stateManagementConfig "vuex"}},
     "vuex": "~3.0.1"
-    {{/vuex}}
-    {{#vueStash}},
+    {{/if_eq}}
+    {{#if_eq stateManagementConfig "vueStash"}},
     "vue-stash": "~v2.0.1-beta"
-    {{/vueStash}}
-    {{#moment}},
+    {{/if_eq}}
+    {{#if_eq dateLibrary "moment"}},
     "moment": "~2.19.3"
-    {{/moment}}
-    {{#datefns}},
+    {{/if_eq}}
+    {{#if_eq dateLibrary "datefns"}},
     "date-fns": "~1.29.0"
-    {{/datefns}}
+    {{/if_eq}}
     {{#lodash}},
     "lodash": "~4.17.4"
     {{/lodash}}

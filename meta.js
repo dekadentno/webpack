@@ -46,14 +46,26 @@ module.exports = {
             "type": "confirm",
             "message": "Install vue-router?"
         },
-        // custom packages
-        "datefns": {
+        "dateLibrary": {
             "type": "confirm",
-            "message": "Install date-fns?"
+            "message": "Use a date library tool?"
         },
-        "moment": {
-            "type": "confirm",
-            "message": "Install moment?"
+        "dateLibraryConfig": {
+            "when": "dateLibrary",
+            "type": "list",
+            "message": "Pick a date library tool",
+            "choices": [
+                {
+                    "name": "Date-Fns",
+                    "value": "datefns",
+                    "short": "datefns"
+                },
+                {
+                    "name": "Moment.js",
+                    "value": "moment",
+                    "short": "moment"
+                }
+            ]
         },
         "socket": {
             "type": "confirm",
@@ -63,15 +75,27 @@ module.exports = {
             "type": "confirm",
             "message": "Install lodash?"
         },
-        "vueStash": {
+        "stateManagement": {
             "type": "confirm",
-            "message": "Install vue-stash (simplified vuex)?"
+            "message": "Use a state management tool?"
         },
-        "vuex": {
-            "type": "confirm",
-            "message": "Install vuex?"
+        "stateManagementConfig": {
+            "when": "stateManagement",
+            "type": "list",
+            "message": "Pick a state management tool",
+            "choices": [
+                {
+                    "name": "Vue Stash",
+                    "value": "vueStash",
+                    "short": "vueStash"
+                },
+                {
+                    "name": "Vuex",
+                    "value": "vuex",
+                    "short": "vuex"
+                }
+            ]
         },
-        // end custom
         "lint": {
             "type": "confirm",
             "message": "Use ESLint to lint your code?"
