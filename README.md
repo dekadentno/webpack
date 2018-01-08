@@ -30,12 +30,15 @@ matej@happy-camper:~/Desktop$ vue init dekadentno/webpack-barrage dummy
 ? Pick a date library tool moment
 ? Install vue-socket.io? Yes
 ? Install lodash? Yes
+? Install Noty? Yes
+? Use a chart library? Yes
+? Pick a chart library:  g2
 ? Use a state management tool? Yes
-? Pick a state management tool vueStash
+? Pick a state management tool:  vueStash
 ? Use ESLint to lint your code? Yes
-? Pick an ESLint preset barrage
+? Pick an ESLint preset:  barrage
 ? Set up unit tests No
-? Setup e2e tests with Nightwatch? No
+? Setup e2e tests with Nightwatch? Yes
 
    vue-cli · Generated "dummy".
 
