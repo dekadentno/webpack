@@ -11,15 +11,15 @@
 
 <script>
   {{#unless router}}
-  import HelloWorld from './components/HelloWorld'{{#if_eq lintConfig "none"}};{{/if_eq}}
+  import HelloWorld from './components/HelloWorld'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 
     {{/unless}}
   export default {
-    name: 'App'{{#router}}{{#if_eq lintConfig "none"}}{{/if_eq}}{{else}},
+    name: 'App'{{#router}}{{#if_eq lintConfig "barrage"}}{{/if_eq}}{{else}},
         components: {
-          HelloWorld{{#if_eq lintConfig "none"}},{{/if_eq}}
-        }{{#if_eq lintConfig "none"}},{{/if_eq}}{{/router}}
-  }{{#if_eq lintConfig "none"}};{{/if_eq}}
+          HelloWorld{{#if_eq lintConfig "barrage"}},{{/if_eq}}
+        }{{#if_eq lintConfig "barrage"}},{{/if_eq}}{{/router}}
+  }{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 </script>
 
 <style>

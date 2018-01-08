@@ -1,7 +1,8 @@
-/build/
-/config/
-/dist/
-/*.js
+build/*
+config/*
+node_modules/*
+dist/*
+*.css
 {{#unit}}
-/test/unit/coverage/
+test/*
 {{/unit}}

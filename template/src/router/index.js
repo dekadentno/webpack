@@ -1,8 +1,8 @@
-import Vue from 'vue'{{#if_eq lintConfig "none"}};{{/if_eq}}
-import Router from 'vue-router'{{#if_eq lintConfig "none"}};{{/if_eq}}
-import HelloWorld from '@/components/HelloWorld'{{#if_eq lintConfig "none"}};{{/if_eq}}
+import Vue from 'vue'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+import Router from 'vue-router'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+import HelloWorld from '@/components/HelloWorld'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 
-Vue.use(Router){{#if_eq lintConfig "none"}};{{/if_eq}}
+Vue.use(Router){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 
 export default new Router({
   routes: [
@@ -12,4 +12,4 @@ export default new Router({
       component: HelloWorld
     }
   ]
-}){{#if_eq lintConfig "none"}};{{/if_eq}}
+}){{#if_eq lintConfig "barrage"}};{{/if_eq}}

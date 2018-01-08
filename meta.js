@@ -82,19 +82,9 @@ module.exports = {
             "message": "Pick an ESLint preset",
             "choices": [
                 {
-                    "name": "Standard (https://github.com/standard/standard)",
-                    "value": "standard",
-                    "short": "Standard"
-                },
-                {
-                    "name": "Airbnb (https://github.com/airbnb/javascript)",
-                    "value": "airbnb",
-                    "short": "Airbnb"
-                },
-                {
-                    "name": "none (configure it yourself)",
-                    "value": "none",
-                    "short": "none"
+                    "name": "Barrage (official Barrage config)",
+                    "value": "barrage",
+                    "short": "barrage"
                 }
             ]
         },
