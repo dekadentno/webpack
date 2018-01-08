@@ -7,9 +7,6 @@ import App from './App'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{#router}}
 import router from './router'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/router}}
-{{#vueResource}}
-import VueResource from 'vue-resource'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
-{{/vueResource}}
 {{#vueStash}}
 import VueStash from 'vue-stash'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/vueStash}}
@@ -23,6 +20,9 @@ import moment from 'moment'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 import lodash from 'lodash'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 window._ = lodash{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/lodash}}
+{{#datefns}}
+import * as DateFns from 'date-fns'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/datefns}}
 {{#socket}}
 /*
 import VueSocketio from 'vue-socket.io';
@@ -39,9 +39,12 @@ Vue.use(VueStash){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{#vuex}}
 Vue.use(Vuex){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/vuex}}
-  {{#moment}}
+{{#moment}}
 Vue.use(moment){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/moment}}
+{{#datefns}}
+Vue.use(DateFns){{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/datefns}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 

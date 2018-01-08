@@ -47,6 +47,10 @@ module.exports = {
             "message": "Install vue-router?"
         },
         // custom packages
+        "datefns": {
+            "type": "confirm",
+            "message": "Install date-fns?"
+        },
         "moment": {
             "type": "confirm",
             "message": "Install moment?"
@@ -58,10 +62,6 @@ module.exports = {
         "lodash": {
             "type": "confirm",
             "message": "Install lodash?"
-        },
-        "vueResource": {
-            "type": "confirm",
-            "message": "Install vue-resource?"
         },
         "vueStash": {
             "type": "confirm",

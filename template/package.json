@@ -39,12 +39,12 @@
     {{#vueStash}},
     "vue-stash": "~v2.0.1-beta"
     {{/vueStash}}
-    {{#vueResource}},
-    "vue-resource": "~1.3.4"
-    {{/vueResource}}
     {{#moment}},
     "moment": "~2.19.3"
     {{/moment}}
+    {{#datefns}},
+    "date-fns": "~1.29.0"
+    {{/datefns}}
     {{#lodash}},
     "lodash": "~4.17.4"
     {{/lodash}}

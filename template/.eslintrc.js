@@ -26,6 +26,7 @@ module.exports = {
     'object-property-newline': 0,
     'vue/order-in-components': 0,
     'vue/html-self-closing': 0,
+    'import/first': 0,
     "vue/max-attributes-per-line": [2, {
       "singleline": 2,
       "multiline": {
