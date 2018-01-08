@@ -51,6 +51,15 @@
     {{#socket}},
     "vue-socket.io": "~2.1.1-a"
     {{/socket}}
+    {{#if_eq charts "g2"}},
+    "@antv/g2": "^3.0.2-beta.1"
+    {{/if_eq}}
+    {{#if_eq charts "chartjs"}},
+    "@vue-chart-js": "^1.4.1"
+    {{/if_eq}}
+    {{#noty}},
+    "vuejs-noty": "^0.1.2"
+    {{/noty}}
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -79,9 +88,6 @@
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
     {{/lint}}
-    {{#noty}}
-    "vuejs-noty": "^0.1.2",
-    {{/noty}}
     "eventsource-polyfill": "^0.9.6",
     "extract-text-webpack-plugin": "^3.0.0",
     "file-loader": "^1.1.4",

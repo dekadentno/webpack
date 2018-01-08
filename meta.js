@@ -79,6 +79,27 @@ module.exports = {
             "type": "confirm",
             "message": "Install Noty?"
         },
+        "charts": {
+            "type": "confirm",
+            "message": "Use a chart library?"
+        },
+        "chartsConfig": {
+            "when": "charts",
+            "type": "list",
+            "message": "Pick a chart library: ",
+            "choices": [
+                {
+                    "name": "G2",
+                    "value": "g2",
+                    "short": "g2"
+                },
+                {
+                    "name": "Chart.js",
+                    "value": "chartjs",
+                    "short": "chartjs"
+                }
+            ]
+        },
         "stateManagement": {
             "type": "confirm",
             "message": "Use a state management tool?"

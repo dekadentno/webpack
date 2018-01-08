@@ -25,7 +25,14 @@ import * as DateFns from 'date-fns'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/if_eq}}
 {{#noty}}
 import VueNoty from 'vuejs-noty'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+import 'vuejs-noty/dist/vuejs-noty.css'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/noty}}
+{{#if_eq charts "chartjs"}}
+import VueChart from 'vue-chart-js'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/if_eq}}
+{{#if_eq charts "g2"}}
+import G2 from '@antv/g2'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/if_eq}}
 {{#socket}}
 /*
 import VueSocketio from 'vue-socket.io';
@@ -50,6 +57,12 @@ Vue.use(moment){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/if_eq}}
 {{#if_eq dateLibrary "datefns"}}
 Vue.use(DateFns){{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/if_eq}}
+{{#if_eq charts "chartjs"}}
+Vue.use(VueChart.default){{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/if_eq}}
+{{#if_eq charts "g2"}}
+Vue.use(G2){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/if_eq}}
 
 Vue.config.productionTip = false{{#if_eq lintConfig "barrage"}};{{/if_eq}}
