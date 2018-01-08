@@ -23,6 +23,9 @@ window._ = lodash{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{#if_eq dateLibrary "datefns"}}
 import * as DateFns from 'date-fns'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/if_eq}}
+{{#noty}}
+import VueNoty from 'vuejs-noty'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/noty}}
 {{#socket}}
 /*
 import VueSocketio from 'vue-socket.io';
@@ -33,6 +36,9 @@ Vue.use(VueSocketio, 'http://socketserver.com:1923');
 {{#vueResource}}
 Vue.use(VueResource){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/vueResource}}
+{{#noty}}
+Vue.use(VueNoty){{#if_eq lintConfig "barrage"}};{{/if_eq}}
+{{/noty}}
 {{#if_eq stateManagementConfig "vueStash"}}
 Vue.use(VueStash){{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/if_eq}}

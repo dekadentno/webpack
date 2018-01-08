@@ -75,6 +75,10 @@ module.exports = {
             "type": "confirm",
             "message": "Install lodash?"
         },
+        "noty": {
+            "type": "confirm",
+            "message": "Install Noty?"
+        },
         "stateManagement": {
             "type": "confirm",
             "message": "Use a state management tool?"
@@ -82,7 +86,7 @@ module.exports = {
         "stateManagementConfig": {
             "when": "stateManagement",
             "type": "list",
-            "message": "Pick a state management tool",
+            "message": "Pick a state management tool: ",
             "choices": [
                 {
                     "name": "Vue Stash",
@@ -103,7 +107,7 @@ module.exports = {
         "lintConfig": {
             "when": "lint",
             "type": "list",
-            "message": "Pick an ESLint preset",
+            "message": "Pick an ESLint preset: ",
             "choices": [
                 {
                     "name": "Barrage (official Barrage config)",
