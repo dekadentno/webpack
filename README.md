@@ -26,16 +26,16 @@ matej@happy-camper:~/Desktop$ vue init dekadentno/webpack-barrage dummy
 ? Author Matej Lazarević <matej.lazarevic@33barrage.com>
 ? Vue build standalone
 ? Install vue-router? Yes
-? Install date-fns? Yes
-? Install moment? No
+? Use a date library tool? Yes
+? Pick a date library tool moment
 ? Install vue-socket.io? Yes
 ? Install lodash? Yes
-? Install vue-stash (simplified vuex)? Yes
-? Install vuex? No
+? Use a state management tool? Yes
+? Pick a state management tool vueStash
 ? Use ESLint to lint your code? Yes
 ? Pick an ESLint preset barrage
 ? Set up unit tests No
-? Setup e2e tests with Nightwatch? Yes
+? Setup e2e tests with Nightwatch? No
 
    vue-cli · Generated "dummy".
 
