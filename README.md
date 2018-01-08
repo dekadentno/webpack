@@ -2,12 +2,15 @@
 
 Currently available packages:
 * axios
-* vue-resource
 * vuex
 * vue-stash
+* date-fns
 * moment
 * lodash
 * vue-socket.io
+* Noty
+* G2
+* Chart.js
 
 
 Use template:
