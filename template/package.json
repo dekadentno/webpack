@@ -73,18 +73,11 @@
     "eslint-plugin-html": "^3.0.0",
     "eslint-plugin-vue": "^4.0.1",
     "eslint-plugin-vue-libs": "^2.1.0",
-    {{#if_eq lintConfig "none"}}
     "eslint-config-standard": "^10.2.1",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-import": "^2.7.0",
     "eslint-plugin-node": "^5.2.0",
-    {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
-    "eslint-config-airbnb-base": "^11.3.0",
-    "eslint-import-resolver-webpack": "^0.8.3",
-    "eslint-plugin-import": "^2.7.0",
-    {{/if_eq}}
     {{/lint}}
     "eventsource-polyfill": "^0.9.6",
     "extract-text-webpack-plugin": "^3.0.0",
