@@ -24,8 +24,8 @@ window._ = lodash{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 import * as DateFns from 'date-fns'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/if_eq}}
 {{#noty}}
-import VueNoty from 'vuejs-noty'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 import 'vuejs-noty/dist/vuejs-noty.css'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
+import VueNoty from 'vuejs-noty'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
 {{/noty}}
 {{#if_eq charts "chartjs"}}
 import VueChart from 'vue-chart-js'{{#if_eq lintConfig "barrage"}};{{/if_eq}}
